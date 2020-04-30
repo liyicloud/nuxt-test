@@ -25,7 +25,8 @@ export default {
         }
     },
     async asyncData ({route,app}) {
-        const user = await app.$axios.$get(`https://jsonplaceholder.typicode.com/users/${route.params.id}`)
+        //const user = await app.$axios.$get(`https://jsonplaceholder.typicode.com/users/${route.params.id}`)
+        const user = await app.$axios.$get(`/users/${route.params.id}`)
         return{
             user
         }

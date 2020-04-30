@@ -52,7 +52,8 @@ export default {
     },
   },
   async asyncData({ app }) {
-    const baseUrl = 'https://jsonplaceholder.typicode.com/todos/';
+    //const baseUrl = 'https://jsonplaceholder.typicode.com/todos/';
+    const baseUrl = '/todos/';
     const response = await app.$axios.$get(baseUrl);
     return { lists: response };
   }

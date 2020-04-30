@@ -3,7 +3,12 @@ modules: [
     '@nuxtjs/axios',
     '@nuxtjs/vuetify'
   ],
+  /*
+   ** Axios module configuration
+   ** See https://axios.nuxtjs.org/options
+   */
   axios: {
+    baseURL: 'https://jsonplaceholder.typicode.com/',
   },
   vuetify: {    
     theme: {
